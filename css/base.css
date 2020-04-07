@@ -68,7 +68,7 @@ header, footer, .main { width: 100%; margin: 0 auto }
 /* btmbar */
 .btmbar { position: fixed; bottom: 0; width: 100%; height: .98rem; box-shadow: 0 0 .1rem #ccc; background: #3081f3; overflow: hidden; z-index: 999 }
 .btmbar ul { height: 100%; margin: 0 .35rem }
-.btmbar li { width: 25%; height: 100%; color: #fff; text-align: center }
+.btmbar li { width: 33.3%; height: 100%; color: #fff; text-align: center }
 .btmbar li img { width: auto; height: 44%; margin-top: .12rem }
 .btmbar li span { display: block; font-size: .22rem; line-height: .4rem }
 .btmbar li a { color: #fff }
