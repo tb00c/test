@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>智慧电厂APP</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="apple-mobile-web-app-title" content="智慧电厂APP">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="con flex-between top">
+    <div class="top-l"><a onClick="javascript :history.back(-1);"><img class="logo-top" src="images/logo-ico1.png" width="23" height="54" alt=""/><span>智慧电厂APP</span></a></div>
+    <div class="top-r"><img src="images/top-r.png" width="182" height="60" alt=""/></div>
+  </div>
+  <div class="banner"><img src="images/banner.jpg" width="750" height="315"  alt=""/></div>
+  <div class="menu">
+    <ul class="flex-row">
+      <li><a href="index-lp.html" title=""><img src="images/menu-ico1.png" width="90" height="90" alt=""/><p>两票管理</p></a></li>
+      <li><a href="list-xj-line.html" title=""><img src="images/menu-ico2.png" width="90" height="90" alt=""/><p>巡检管理</p></a></li>
+      <li><a href="list-qx.html" title=""><img src="images/menu-ico3.png" width="90" height="90" alt=""/><p>缺陷管理</p></a></li>
+      <li><a href="list-gd.html" title=""><img src="images/menu-ico4.png" width="90" height="90" alt=""/><p>工单管理</p></a></li>
+      <li><a href="#" title=""><img src="images/menu-ico5.png" width="90" height="90" alt=""/><p>台账管理</p></a></li>
+      <li><a href="#" title=""><img src="images/menu-ico6.png" width="90" height="90" alt=""/><p>配煤优化</p></a></li>
+      <li><a href="#" title=""><img src="images/menu-ico7.png" width="90" height="90" alt=""/><p>锅炉提效</p></a></li>
+      <li><a href="#" title=""><img src="images/menu-ico8.png" width="90" height="90" alt=""/><p>汽机提效</p></a></li>
+      <li><a href="#" title=""><img src="images/menu-ico9.png" width="90" height="90" alt=""/><p>人员定位</p></a></li>
+      <li><a href="#" title=""><img src="images/menu-ico10.png" width="90" height="90" alt=""/><p>能源指标管理</p></a></li>
+      <li><a href="#" title=""><img src="images/menu-ico11.png" width="90" height="90" alt=""/><p>运行绩效管理</p></a></li>
+      <li><a href="#" title=""><img src="images/menu-ico12.png" width="90" height="90" alt=""/><p>预测性维护</p></a></li>
+      <li><a href="#" title=""><img src="images/menu-ico13.png" width="90" height="90" alt=""/><p>精益班组</p></a></li>
+      <li><a href="#" title=""><img src="images/menu-ico14.png" width="90" height="90" alt=""/><p>大修周期延长措施</p></a></li>
+    </ul>
+  </div>
+  
+</div>
+<div class="btmbar">
+  <ul class="flex-row">
+    <li class="on"> <a href="index.html" title=""> <img src="images/bar-ico1-on.png" width="42" height="42" alt=""/> <span>首页</span> </a> </li>
+   
+    <li> <a href="message.html" title=""> <img src="images/bar-ico3.png" width="42" height="42" alt=""/> <span>消息</span> </a> </li>
+    <li> <a href="my.html" title=""> <img src="images/bar-ico4.png" width="42" height="42" alt=""/> <span>我的</span> </a> </li>
+  </ul>
+</div>
+<script type="text/javascript">
+$(function () {
+  var winH = $(window).height(), mainH = $('.main').height();  
+  if( mainH-winH < 0){
+    $('.main').height(winH);
+  }
+
+})
+</script>
+</body>
+</html>

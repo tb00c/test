@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* head */
+.my-top { height: 2.9rem; background: url(../images/my-topbg.jpg) no-repeat center 0; background-size: 100% 100% }
+.my-top ul { padding-top: .1rem; color: #fff; text-align: center }
+.my-head { width: 1.2rem; height: 1.2rem; border: .03rem solid #fff; border-radius: 100%; background: #fff; box-shadow: 0 0 .1rem #ccc }
+.my-name { font-size: .3rem; font-weight: normal; line-height: .48rem }
+.my-role { display: inline-block; padding: .02rem .1rem; background: #fff; border-radius: .3rem; color: #3081f3; font-size: .18rem; line-height: normal }
+.my-bumen { width: 50%; margin: .08rem auto 0; font-size: .18rem; line-height: .32rem ;font-weight: normal;}
+.my-item { margin-bottom: .35rem; background: #fff }
+.my-item.first:after { content: ""; display: block; width: 100%; border-bottom: 1px solid #e4e4e4; box-shadow: 0 0 .1rem #ccc }
+.my-item ul { padding: 0 .35rem; }
+.my-item li { height: .98rem; border-bottom: .02rem solid #eee; font-size: 0.28rem; color: #444 }
+.my-item li:last-child { border: none }
+.my-item-l { height: 100%; -webkit-justify-content: flex-start; justify-content: flex-start }
+.my-item-l img { width: auto; height: 43%; margin-right: .2rem }
+.my-item-r { height: 100%; -webkit-justify-content: flex-end; justify-content: flex-end; color: #999; font-size: .24rem }
+.my-item-r img { width: auto; height: 37%; margin-left: .2rem }
+.exit{margin-top:.7rem;text-align: center;}
+.btn{padding: 0 1.5rem;background:#3081f3;font-size: .36rem;line-height: .86rem;color: #fff;border:none;border-radius: .5rem;}
+

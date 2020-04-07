@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>智慧电厂APP</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="apple-mobile-web-app-title" content="智慧电厂APP">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/swiper.min.css" rel="stylesheet">
+<link href="css/select.css" rel="stylesheet">
+<link href="css/list.css" rel="stylesheet" type="text/css">
+<link href="css/items.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/dyselect.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="con flex-between top">
+    <div class="top-l"><a href="index.html"><img src="images/bar-ico1.png" width="42" height="42" alt=""/><span>巡检任务</span></a></div>
+    <div class="top-r"><img src="images/top-r.png" width="182" height="60" alt=""/> </div>
+  </div>
+  <div class="items ">
+    <ul class="items-lines">
+      <li class="li1">当前路线：每天锅炉巡线</li>
+      <li>当前区域：B区域</li>
+      <li>当前设备：#2磨煤机本体</li>
+    </ul>
+  </div>
+  <div class="items">
+    <div class="items-tit flex-between">
+      <h2>巡检项目</h2>
+      <span>4/5</span> </div>
+    <ul>
+      <li class="type1">
+        <div class="flex-between">
+          <div class="items-l">1、滚筒螺丝是否有异常？</div>
+          <div class="items-r"><span class="btn1"></span></div>
+        </div>
+      </li>
+      <li class="type1">
+        <div class="flex-between type1">
+          <div class="items-l">2、前后轴瓦及减速机润滑油量是否异常？</div>
+          <div class="items-r"><span class="btn2"></span></div>
+        </div>
+      </li>
+      <li class="type2">
+        <div class="items-l">3、给水箱的给水温度值：</div>
+        <div class="flex-between">
+          <div class="items-l"><input class="inps" type="text"></div>
+          <div class="items-r"><a class="gets" href="#" title="">获取</a></div>
+        </div>
+      </li>
+      <li class="type3">
+        <div class="items-l">4、压力表显示的压力值：</div>
+        <div class="items-l"><input class="inps" type="text"></div>
+        <div class="up-photo-tit flex-between">
+          <h3>上传重要检查项照片</h3>          
+        </div>
+        <dl class="up-photo flex-between">
+          <dd>
+            <div class="photos"><img src="images/photo-bg.jpg" width="142" height="142"  alt=""/><input class="js_upFile cover1 photos-btn" type="file" name="cover" accept="image/*" capture="camera" multiple /></div>
+          </dd>
+          <dd>
+            <div class="photos"><img src="images/photo-bg.jpg" width="142" height="142"  alt=""/><input class="js_upFile cover1 photos-btn" type="file" name="cover" accept="image/*" capture="camera" multiple /></a></div>
+          </dd>
+          <dd>
+            <div class="photos"><img src="images/photo-bg.jpg" width="142" height="142"  alt=""/><input class="js_upFile cover1 photos-btn" type="file" name="cover" accept="image/*" capture="camera" multiple /></div>
+          </dd>
+          <dd>
+            <div class="photos"><img src="images/photo-bg.jpg" width="142" height="142"  alt=""/><input class="js_upFile cover1 photos-btn" type="file" name="cover" accept="image/*" capture="camera" multiple /></div>
+          </dd>
+        </dl>
+      </li>
+      <li class="type4">
+        <div class="items-l">5、磨煤机外观情况</div>
+        <dl>          
+          <dd class="flex-row">
+            <label>
+              <input class="check-box" type="checkbox" name="CheckboxGroup1" value="" id="CheckboxGroup1_0" checked><span></span>
+            </label>
+            <p>磨煤机各部位无漏风现象</p>
+          </dd>
+          <dd class="flex-row">
+            <label>
+              <input class="check-box" type="checkbox" name="CheckboxGroup1" value="" id="CheckboxGroup1_1"><span></span>
+            </label>
+            <p>磨煤机各部位无漏粉现象</p>
+          </dd>
+          <dd class="flex-row">
+            <label>
+              <input class="check-box" type="checkbox" name="CheckboxGroup1" value="" id="CheckboxGroup1_2" checked><span></span>
+            </label>
+            <p>磨煤机各部位无漏油现象</p>
+          </dd>
+          <dd class="flex-row">
+            <label>
+              <input class="check-box" type="checkbox" name="CheckboxGroup1" value="" id="CheckboxGroup1_3" checked><span></span>
+            </label>
+            <p>磨煤机无明显振动、声音正常</p>
+          </dd>
+          <dd class="flex-row">
+            <label>
+              <input class="check-box" type="checkbox" name="CheckboxGroup1" value="" id="CheckboxGroup1_4"><span></span>
+            </label>
+            <p>磨煤机顶部及各处无积粉</p>
+          </dd>
+        </dl>
+      </li>
+      <li class="type5">
+        <div class="items-l">备注：</div>
+        <textarea class="textarea"></textarea>
+      </li>
+    </ul>
+  </div>
+  <div class="items-btn"><input class="inp-btn show" type="submit" value="提 交"></div>
+</div>
+
+<div class="btmbar hide">
+  <ul class="flex-row">
+<li> <a href="index.html" title=""> <img src="images/bar-ico1.png" width="42" height="42" alt=""/> <span>首页</span> </a> </li>
+    <li class="on"> <a href="list-xj-device.html" title=""> <img src="images/bar-ico2-on.png" width="42" height="42" alt=""/> <span>任务</span> </a> </li>
+    <li> <a href="message.html" title=""> <img src="images/bar-ico3.png" width="42" height="42" alt=""/> <span>消息</span> </a> </li>
+    <li> <a href="my.html" title=""> <img src="images/bar-ico4.png" width="42" height="42" alt=""/> <span>我的</span> </a> </li>
+  </ul>
+</div>
+<div class="black_overlay close"></div>
+<div class="white_content6">
+  <p>提交后将不能再修改，是否确认提交？</p>
+  <button class="btns bgc-grey">取消</button>
+  <button class="btns bgc-blue">确定</button> 
+</div>
+<div class="select_box select_box1"></div>
+<div class="select_box select_box2"></div>
+<script src="js/select2.js"></script>
+<script type="text/javascript">
+$(function () {
+    //拍照
+    //获取浏览器的userAgent,并转化为小写
+    var ua = navigator.userAgent.toLowerCase();
+    //判断是否是苹果手机，是则是true
+    var isIos = (ua.indexOf('iphone') != -1) || (ua.indexOf('ipad') != -1);
+    if (isIos) {
+        $("input:file").removeAttr("capture");
+    };
+    
+    //获取
+    $('.gets').click(function () {      
+      $(this).parent().siblings().find('.inps').val('58.3');    
+    });
+})
+</script>
+<script type="text/javascript">
+$(".show").click(function(){
+  $(".black_overlay").show();
+  $(".white_content6").show();
+})
+$(".close").click(function(){
+  $(".black_overlay").hide();
+  $(".white_content6").hide(); 
+})
+</script>
+</body>
+</html>

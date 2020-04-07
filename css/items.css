@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* item */
+.items { margin-bottom: .35rem; padding: 0 .35rem; background: #fff; box-shadow: 0 0 .1rem #ccc; font-size: 0.24rem; color: #333 }
+.items-tit { height: 1rem; line-height: 1rem; border-bottom: .02rem solid #ddd }
+.items-tit h2 { padding-left: .5rem; background: url(../images/ico-item.png) no-repeat left center; background-size: auto 28%; font-size: 0.28rem; font-weight: normal }
+.items-tit span { }
+.items ul { }
+.items li { padding: .3rem 0; border-bottom: .02rem solid #ddd; line-height: .36rem; }
+.items li .items-l { width: 67%; }
+.items li .items-r { width: 30%; text-align: right }
+.items li.type1 span { display: block; height: .36rem; padding-right: .55rem; background: url(../images/ico-jt-select.png) no-repeat right center; background-size: auto 60%; color: #00cc00; font-weight: bold }
+.items li.type1 span.red { color: #f0453d }
+.items li.type2 .inps, .items li.type3 .inps { width: 94%; margin-top: .15rem; padding: 0 3%; height: .62rem; border: .02rem solid #ddd; border-radius: .1rem; background: #f5f5f5; color: #333; line-height: .62rem; outline: none }
+.items li.type2 .items-r .gets { display: inline-block; width: 1rem; height: .62rem; margin-top: .15rem; border: .02rem solid #ff9800; border-radius: .1rem; color: #ff9800; font-weight: bold; line-height: .62rem; text-align: center }
+.items li .up-photo-tit { padding: .15rem 0; border-bottom: .02rem dashed #ddd }
+.items li .up-photo-tit h3 { height: .62rem; padding-left: .55rem; background: url(../images/ico-photo.png) no-repeat left center; background-size: auto 55%; line-height: .62rem; font-weight: normal }
+.items li .up-photo-tit .photo { display: block; height: .62rem; background: url(../images/ico-photo.png) no-repeat right center; background-size: auto 80% }
+.items li .up-photo { padding-top: .3rem }
+.items li .up-photo dd { width: 25% }
+.items li .up-photo dd .photos { position: relative; text-align: center }
+.items li .up-photo dd .photos img { width: 83%; height: auto; border: .02rem solid #ddd; border-radius: .1rem; }
+.items li .up-photo dd .photos .photos-btn { position: absolute; left: 0; top: 0; width: 100%; height: 100%; opacity:0 }
+.items li.type4 dd { -webkit-justify-content: flex-start; justify-content: flex-start; padding: .15rem 0; position: relative }
+.items li.type4 dd .checkboxs { width: .36rem; height: .36rem; margin-right: .2rem; border: .02rem solid #ccc; border-radius: .1rem; outline: none }
+.check-box { display: none }
+.check-box+span { width: .36rem; height: .36rem; margin-right: .2rem; border: 1px solid #ccc; display: inline-block; border-radius: .06rem }
+.check-box:checked+span { background-color: #3081f3; border-color: #3081f3 }
+.check-box:checked+span:after { content: '\2714'; color: #fff; position: absolute; top: 0; left: 0; width: .36rem; height: .36rem; text-align: center; font-size: .3rem }
+.check-box:checked+span { background-color: #3081f3; position: relative }
+.items li .textarea { width: 94%; margin: .15rem 0; padding: .1rem 3%; height: 1.28rem; border: .02rem solid #ddd; border-radius: .1rem; background: #f5f5f5; color: #333; line-height: .36rem; outline: none }
+.items li:last-child { border: none }
+.items-lines { padding: .15rem 0 }
+.items-lines li { padding: 0 0 0 .5rem; border-bottom: none; line-height: .48rem; font-size: .26rem }
+.items-lines li.li1 { background: url(../images/ico-lines.png) no-repeat left center; background-size: auto 60%; }
+.items-btn { width: 66.7%; margin: .5rem auto }
+.items-btn .inp-btn { width: 100%; height: .88rem; margin: 0; padding: 0; border: none; border-radius: .88rem; background: #3081f3;box-shadow: 0 0 .1rem #ccc; color: #fff; font-size: .48rem; line-height: .88rem; text-align: center; outline: none }
+.black_overlay{display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100%;background:#000;z-index:1001;opacity:.5;}
+.white_content6 {display: none;position:fixed;top:50%;left:50%;margin-top: -2.4rem;margin-left: -3.4rem;padding: .5rem 0;width: 6.8rem;font-size: .2rem;border-radius: .2rem;text-align: center;background-color: white;z-index:1002;overflow: auto;}
+.white_content6 p{margin: .5rem 0 1rem;font-size: .32rem;color: #333;text-align: center;}
+.white_content6 button{margin: 0 .5rem;padding: 0 .2rem;width: 2rem;height: .68rem;line-height: .68rem;color: #fff;font-size: .36rem;border:none;border-radius: .5rem;}

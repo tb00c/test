@@ -1,0 +1,13 @@
+@charset "utf-8";
+body { background: #fff }
+/* banner */
+.banner { padding-bottom: .1rem }
+.banner img { width: 100%; height: auto; }
+.banner:after { content: ""; display: block; width: 100%; border-bottom: 1px solid #ccc; box-shadow: 0 0 .15rem #000 }
+/* menu */
+.menu { padding: .5rem .2rem }
+.menu ul { -webkit-flex-wrap: wrap; flex-wrap: wrap; -webkit-justify-content: flex-start; justify-content: flex-start; -webkit-align-items: flex-start; align-items: flex-start }
+.menu li { width: 25%; margin-bottom: .25rem; font-size: .22rem; color: #444; text-align: center }
+.menu li img { width: 53%; height: auto; margin-bottom: .1rem }
+.menu li p { line-height: .3rem }
+.menu li a { color: #444 }

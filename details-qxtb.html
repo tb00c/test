@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>智慧电厂APP</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="apple-mobile-web-app-title" content="智慧电厂APP">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/list.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="con flex-between top">
+    <div class="top-l"><a href="index.html"><img src="images/bar-ico1.png" width="42" height="42" alt=""/><span>缺陷填报</span></a></div>
+    <div class="top-r"><img src="images/top-r.png" width="182" height="60" alt=""/> </div>
+  </div>
+  <div class="qx-t shadow">
+      <p>缺陷填报</p>
+  </div>
+  <div class="qx-c shadow mt35">
+  	<ul>
+  		<li class="flex-between"><p>缺陷单主题</p><input type="text" /></li>
+  		<li class="flex-between"><p>缺 陷 类 型</p><select><option>请选择类型</option><option>填报缺陷异常</option></select></li>
+  		<li class="flex-between"><p>缺 陷 等 级</p><select><option>请选择缺陷等级</option><option>一级</option><option>二级</option><option>三级</option></select></li>
+  		<li class="flex-between"><p>所 属 机 组</p><select><option>请选择所属机组</option><option>#1机组</option><option>#2机组</option></select></li>
+  		<li class="flex-between"><p>缺 陷 描 述</p><input type="text"  /></li>
+  		<li class="flex-between"><p>上 传 图 片</p><img src="images/camera.png" width="40"></li>
+
+      <div class="flex-between">
+  		  <div class="photos">
+          <img class="pho" src="images/photo-bg.jpg" width="146" alt=""/>
+          <input class="js_upFile cover1 photos-btn" type="file" name="cover" accept="image/*" capture="camera" multiple />
+        </div>
+  		  <div class="photos">
+          <img class="pho" src="images/photo-bg.jpg" width="146" alt=""/>
+          <input class="js_upFile cover1 photos-btn" type="file" name="cover" accept="image/*" capture="camera" multiple />
+        </div>
+  		  <div class="photos">
+          <img class="pho" src="images/photo-bg.jpg" width="146" alt=""/>
+          <input class="js_upFile cover1 photos-btn" type="file" name="cover" accept="image/*" capture="camera" multiple />
+        </div>
+      </div>
+
+  		<li class="flex-between"><p>拍 短 视 频</p><img src="images/video.png" width="40"></li>
+  		<img class="pho" src="images/photo.png" width="146">
+  	</ul>
+    
+  </div>
+  <div class="save">
+    <button class="bgc-orange" type="button">保 存</button>   
+    <button class="bgc-blue" type="button">返 回</button>  
+  </div>
+  </div>
+<div class="btmbar hide">
+  <ul class="flex-row">
+<li> <a href="index.html" title=""> <img src="images/bar-ico1.png" width="42" height="42" alt=""/> <span>首页</span> </a> </li>
+    <li class="on"> <a href="list-qx.html" title=""> <img src="images/bar-ico2-on.png" width="42" height="42" alt=""/> <span>任务</span> </a> </li>
+    <li> <a href="message.html" title=""> <img src="images/bar-ico3.png" width="42" height="42" alt=""/> <span>消息</span> </a> </li>
+    <li> <a href="my.html" title=""> <img src="images/bar-ico4.png" width="42" height="42" alt=""/> <span>我的</span> </a> </li>
+  </ul>
+</div>
+<script type="text/javascript">
+$(function () {
+    //拍照
+    //获取浏览器的userAgent,并转化为小写
+    var ua = navigator.userAgent.toLowerCase();
+    //判断是否是苹果手机，是则是true
+    var isIos = (ua.indexOf('iphone') != -1) || (ua.indexOf('ipad') != -1);
+    if (isIos) {
+        $("input:file").removeAttr("capture");
+    };
+    
+    //获取
+    $('.gets').click(function () {      
+      $(this).parent().siblings().find('.inps').val('58.3');    
+    });
+})
+</script>
+
+</body>
+</html>

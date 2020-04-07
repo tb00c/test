@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>智慧电厂APP</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="apple-mobile-web-app-title" content="智慧电厂APP">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/swiper.min.css" rel="stylesheet">
+<link href="css/select.css" rel="stylesheet">
+<link href="css/lCalendar.css" rel="stylesheet" type="text/css">
+<link href="css/list.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/dyselect.js"></script>
+<script type="text/javascript" src="js/lCalendar.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="con flex-between top">
+    <div class="top-l"> <a href="index.html"><img src="images/bar-ico1.png" width="42" height="42" alt=""/><span>我的消息</span></a></div>
+    <div class="top-r"><img src="images/top-r.png" width="182" height="60" alt=""/> </div>
+  </div>  
+  <div class="tab con shadow">
+    <ul class="flex-row">
+      <li class="on"><a class="btn1" href="#" title=""><span>全部</span></a></li>
+      <li><span><input class="inp date" type="text" name="input_date" placeholder="日期" data-lcalendar="2019-01-1,2020-12-31" /></span></li>
+    </ul>
+  </div>
+  <div class="list message">
+    <ul class="mt35">
+      <li>
+        <a href="#" title="">
+        <div class="item-tit flex-between">
+          <h2>2020-03-16 15:00:23</h2>
+          <span>发起人：admin<i>未读</i></span>
+        </div>
+        <div class="item-con flex-between">
+          <dl class="item-l">
+            <dt>每天电压巡检通知</dt>
+            <dd>任务编号：HZCS4223  巡检区域： A区域、B区域、C区域  巡检班组：发电一值  巡检时间...</dd>
+          </dl>
+          <div class="item-r flex-column"> <img src="images/ico-jt-more.png" width="22" height="36"  alt=""/></div>
+        </div>
+        </a>
+      </li>
+      <li>
+        <a href="#" title="">
+        <div class="item-tit flex-between">
+          <h2>2020-03-16 14:30:23</h2>
+          <span>发起人：admin</span>
+        </div>
+        <div class="item-con flex-between">
+          <dl class="item-l">
+            <dt>仪表检查巡线已超时通知</dt>
+            <dd>任务编号：HZCS4223  巡检区域： A区域、B区域、C区域  巡检班组：发电一值  巡检时间...</dd>
+          </dl>
+          <div class="item-r flex-column"> <img src="images/ico-jt-more.png" width="22" height="36"  alt=""/></div>
+        </div>
+        </a>
+      </li>
+      <li>
+        <a href="#" title="">
+        <div class="item-tit flex-between">
+          <h2>2020-03-16 13:00:23</h2>
+          <span>发起人：admin</span>
+        </div>
+        <div class="item-con flex-between">
+          <dl class="item-l">
+            <dt>电气一种工作票批准通知</dt>
+            <dd>工作票编码：X4596，工作内容：61号循环水泵启动。创建人：admin。申请批准通知...</dd>
+          </dl>
+          <div class="item-r flex-column"> <img src="images/ico-jt-more.png" width="22" height="36"  alt=""/></div>
+        </div>
+        </a>
+      </li>
+      <li>
+        <a href="#" title="">
+        <div class="item-tit flex-between">
+          <h2>2020-03-16 10:00:23</h2>
+          <span>发起人：admin<i>未读</i></span>
+        </div>
+        <div class="item-con flex-between">
+          <dl class="item-l">
+            <dt>热力机械操作票审核通知 </dt>
+            <dd>操作票编码：X4596，工作内容：61号循环水泵启动。创建人：admin。申请批准通知...</dd>
+          </dl>
+          <div class="item-r flex-column"> <img src="images/ico-jt-more.png" width="22" height="36"  alt=""/></div>
+        </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="btmbar">
+  <ul class="flex-row">
+    <li> <a href="index.html" title=""> <img src="images/bar-ico1.png" width="42" height="42" alt=""/> <span>首页</span> </a> </li>
+    <li class="hide"> <a href="index.html" title=""> <img src="images/bar-ico2.png" width="42" height="42" alt=""/> <span>任务</span> </a> </li>
+    <li class="on"> <a href="#" title=""> <img src="images/bar-ico3-on.png" width="42" height="42" alt=""/> <span>消息</span> </a> </li>
+    <li> <a href="my.html" title=""> <img src="images/bar-ico4.png" width="42" height="42" alt=""/> <span>我的</span> </a> </li>
+  </ul>
+</div>
+<div class="select_box select_box1"></div>
+<script src="js/select3.js"></script>
+<script type="text/javascript">
+$(function() { 
+  //日历控件
+  var calendar = new lCalendar();
+  calendar.init({
+    'trigger': '.date',
+    'type': 'date'
+  });
+  
+})
+</script>
+</body>
+</html>

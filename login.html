@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>智慧电厂APP</title>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/login.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+</head>
+<body>
+<div class="main-login">
+  <div class="con flex-between top">
+    <div class="top-l"><a href="#" title=""><img class="logo-top" src="images/logo-ico1.png" width="23" height="54" alt=""/><span>智慧电厂APP</span></a></div>
+    <div class="top-r"><img src="images/top-r.png" width="182" height="60" alt=""/></div>
+  </div>
+  <div class="login">
+    <div class="login-con">
+      <div class="logo"> <span><img src="images/logo-ico2.png" width="60" height="143" alt=""/></span> </div>
+      <ul>
+        <li class="flex-row">
+          <img src="images/ico-user.png" width="48" height="48"  alt=""/>
+          <input class="inp" type="text" placeholder="请输入用户名" />
+        </li>
+        <li class="flex-row">
+          <img src="images/ico-password.png" width="48" height="48"  alt=""/>
+          <input class="inp" type="password" placeholder="请输入密码" />
+          <i class="eye1"></i><i class="eye2"></i>
+        </li>
+        <li class="flex-row check">
+          <label>
+            <input class="check-box" type="checkbox"  checked value="">
+            <span></span>
+          </label>
+          <p>记住密码</p>
+        </li>
+      </ul>
+      <div class="login-btn">
+        <p>
+          <input type="button" onclick="window.open('index.html')" value="登录" />
+        </p>
+      </div>
+    </div>
+    <div class="login-other">
+      <h3><span>其他方式登录</span></h3>
+      <ul class="logins flex-row">
+        <li>
+          <a href="#" title="">
+            <img src="images/login-face.png" width="74" height="74"  alt=""/>
+            <p>刷脸登录</p>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="">
+            <img src="images/login-hand.png" width="74" height="74"  alt=""/>
+            <p>指纹登录</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <footer><img class="logo-btm" src="images/logo-btm.png" width="23" height="54" alt=""/></footer>
+</div>
+<script type="text/javascript">
+$(function () {
+  var winH = $(window).height(), mainH = $('.main-login').height();  
+  if( mainH -winH < 0){
+    $('footer').addClass('fixed');
+  }else{
+    $('footer').removeClass('fixed');
+  };
+  
+  $('.eye1').click(function () {
+    $(this).hide();
+    $(this).siblings('input').prop('type','text');
+    $('.eye2').show();
+  });
+  $('.eye2').click(function () {
+    $(this).hide();
+    $(this).siblings('input').prop('type','password');
+    $('.eye1').show();
+  });
+})
+</script>
+</body>
+</html>

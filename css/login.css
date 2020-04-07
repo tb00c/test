@@ -1,0 +1,31 @@
+@charset "utf-8";
+body { background: #fff }
+.login { padding-top: 3.7rem; background: url(../images/login-bg.jpg) no-repeat center 0; background-size: 100% auto; }
+.login-con { position: relative; margin: 0 .5rem; padding: 1.2rem .5rem 0; background: rgba(255, 255, 255, .95); border-radius: .16rem; box-shadow: 0 0 .2rem #ddd }
+.logo { position: absolute; top: -1.15rem; left: 50%; margin-left: -1.15rem; width: 2.3rem; height: 2.3rem; background: url(../images/logo-bor.png) no-repeat center 0; background-size: 100% auto }
+.logo span { display: block; width: 1.86rem; height: 1.86rem; margin: .22rem auto 0; background: rgba(255, 255, 255, .9); border-radius: 100%; box-shadow: 0 0 .2rem #ddd; text-align: center }
+.logo img { width: auto; height: 78%; margin-top: .2rem }
+.login-con ul { padding: 0 .5rem .44rem; background: #fff; border-radius: .16rem; }
+.login-con li { position: relative; height: .98rem; border-bottom: .02rem solid #e5e5e5; -webkit-justify-content: flex-start; justify-content: flex-start; }
+.login-con li img { width: auto; height: 48%; margin-right: .4rem }
+.login-con li .inp { height: .98rem; border: none; background: none; font-size: .26rem; color: #666; outline: none }
+.login-con li .eye1 { position: absolute; top: 50%; margin-top: -.15rem; right: 0; width: .42rem; height: .29rem; background: url(../images/ico-eye1.png) no-repeat 0 0; background-size:100% auto  }
+.login-con li .eye2 { display: none; position: absolute; top: 50%; margin-top: -.15rem; right: 0; width: .42rem; height: .29rem; background: url(../images/ico-eye2.png) no-repeat 0 0; background-size:100% auto  }
+.login-con li.check { border: none }
+.login-con li.check p { font-size: .22rem; color: #666 }
+.check-box { display: none }
+.check-box+span { width: .32rem; height: .32rem; margin-right: .2rem; border: 1px solid #ccc; display: inline-block; border-radius: .06rem }
+.check-box:checked+span { background-color: #3081f3; border-color: #3081f3 }
+.check-box:checked+span:after { content: '\2714'; color: #fff; position: absolute; top: 0; left: 0; width: .32rem; height: .32rem; text-align: center; font-size: .3rem }
+.check-box:checked+span { background-color: #3081f3; position: relative }
+.login-con li:last-child { border: none }
+.login-btn { position: absolute; bottom: -.44rem; left: 0; width: 100%; height: .88rem }
+.login-btn p { margin: 0 1rem }
+.login-btn input { width: 100%; height: .88rem; margin: 0; padding: 0; border: none; background: #3081f3; border-radius: .88rem; color: #fff; font-size: .42rem; line-height: .88rem; text-align: center; outline: none }
+.login-other { margin: .65rem 1.5rem }
+.login-other h3 { height: .25rem; border-bottom: .02rem solid #e5e5e5; color: #999; font-size: .2rem; font-weight: normal; line-height: .5rem; text-align: center }
+.login-other span { display: inline-block; height: .5rem; padding: 0 .25rem; background: #fff }
+.logins { padding-top: .25rem }
+.logins li { width: 50%; color: #666; font-size: .22rem; line-height: .5rem; text-align: center }
+.logins li img { width: .66rem; height: .66rem }
+.logins li a { color: #666; outline: none }

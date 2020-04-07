@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>智慧电厂APP</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="apple-mobile-web-app-title" content="智慧电厂APP">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/my.css" rel="stylesheet" type="text/css">
+<link href="css/swiper.min.css" rel="stylesheet">
+<link href="css/select.css" rel="stylesheet">
+<link href="css/list.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="con flex-between top">
+    <div class="top-l"><a href="index.html"><img src="images/bar-ico1.png" width="42" height="42" alt=""/><span>我的</span></a></div>
+    <div class="top-r"><img src="images/top-r.png" width="182" height="60" alt=""/></div>
+  </div>
+  <div class="my-top">
+    <ul>
+      <li><img class="my-head" src="images/my-head.png" width="120" height="120"  alt=""/></li>
+      <li>
+        <h2 class="my-name">万小浦</h2>
+      </li>
+      <li><span class="my-role">超级管理员</span></li>
+      <li>
+        <p class="my-bumen">设备维修部-锅炉1班</p>
+      </li>
+    </ul>
+  </div>
+  <div class="my-item first">
+    <ul>
+      <a href="index-two.html"><li class="flex-between">
+        <div class="my-item-l flex-row"><img src="images/my-ico1.png" width="42" height="42" alt=""/><span>我的任务</span></div>
+        <div class="my-item-r flex-row"><img src="images/ico-jt-more.png" width="22" height="36" alt=""/></div>
+      </li></a>
+      <a href="message.html"><li class="flex-between">
+        <div class="my-item-l flex-row"><img src="images/my-ico2.png" width="42" height="42" alt=""/><span>我的消息</span></div>
+        <div class="my-item-r flex-row"><img src="images/ico-jt-more.png" width="22" height="36" alt=""/></div>
+      </li></a>
+    </ul>
+  </div>
+  <div class="my-item shadow">
+    <ul>
+      <a href="my-psw.html"><li class="flex-between">
+
+        <div class="my-item-l flex-row"><img src="images/my-ico3.png" width="42" height="42" alt=""/> <span>密码修改</span></div>
+        <div class="my-item-r flex-row"><img src="images/ico-jt-more.png" width="22" height="36" alt=""/></div>
+      </li></a>
+      <a href="my-tel.html"><li class="flex-between">
+        <div class="my-item-l flex-row"><img src="images/my-ico4.png" width="42" height="42" alt=""/> <span>联系电话</span></div>
+        <div class="my-item-r flex-row"><img src="images/ico-jt-more.png" width="22" height="36" alt=""/></div>
+      </li></a>
+    </ul>
+  </div>
+  <div class="my-item shadow">
+    <ul>
+      <li class="flex-between">
+        <div class="my-item-l flex-row"><img src="images/my-ico5.png" width="42" height="42" alt=""/><span>版本更新</span></div>
+        <div class="my-item-r flex-row"><span>当前版本V1.1.0</span><img src="images/ico-jt-more.png" width="22" height="36" alt=""/></div>
+      </li>
+    </ul>
+  </div>
+  <div class="exit">
+    <input class="btn" type="button" onclick="window.location.href = 'login.html'" value="安全退出" />
+  </div>
+</div>
+<div class="btmbar">
+  <ul class="flex-row">
+    <li> <a href="index.html" title=""> <img src="images/bar-ico1.png" width="42" height="42" alt=""/> <span>首页</span> </a> </li>
+    <li class="hide"> <a href="index.html" title=""> <img src="images/bar-ico2.png" width="42" height="42" alt=""/> <span>任务</span> </a> </li>
+    <li> <a href="message.html" title=""> <img src="images/bar-ico3.png" width="42" height="42" alt=""/> <span>消息</span> </a> </li>
+    <li class="on"> <a href="#" title=""> <img src="images/bar-ico4-on.png" width="42" height="42" alt=""/> <span>我的</span> </a> </li>
+  </ul>
+</div>
+<script type="text/javascript">
+$(function () {
+  var winH = $(window).height(), mainH = $('.main').height();  
+  if( mainH-winH < 0){
+    $('.main').height(winH);
+  }
+
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>智慧电厂APP</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="format-detection" content="email=no" />
+<meta name="apple-mobile-web-app-title" content="智慧电厂APP">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/list.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="con flex-between top">
+    <div class="top-l"><a href="index.html"><img src="images/bar-ico1.png" width="42" height="42" alt=""/><span>工作票</span></a></div>
+    <div class="top-r"><img src="images/top-r.png" width="182" height="60" alt=""/></div>
+  </div>
+  <div class="table">
+      <h3>电气第一种工作票</h3>
+      <ul>
+        <li class="row1 flex-between bor-top">
+          <div class="fle"><h5>部门:</h5><input class="input2" type="text" value="电厂" /></div>
+          <div class="fle"><h5>工作票编号:</h5><input class="input2" type="text" value="2020032" /></div>
+        </li>
+        <li class="row2 flex-between">
+          <div class="fle"><h5>工作负责人:</h5><input class="input2" type="text" value="admin" /></div>
+          <div class="fle"><h5>班组:</h5><input class="input2" type="text" value="值班A组" /></div>
+        </li>
+        <li class="row1">
+          <h5>工作班成员名单（不包括工作负责人）   共   3   人: </h5>
+        </li>
+        <li class="row2">
+          <input type="text" class="input3" value="张三 李四 王五" />
+        </li>
+        <li class="row1">
+          <h5>工作内容和工作地点:</h5>
+        </li>
+        <li class="row2">
+          <input type="text" class="input3" value="间配电所，更换1#变压器跌落保险" />
+        </li>
+        <li class="row1 bor-bot">
+          <h5>工作时间: 自 <input class="input2" type="text" value="2020-03-13" />至<input class="input2" type="text" value="2020-03-21" />。</h5>
+        </li>
+        <li class="row2 bor-top flex-between">
+          <h5>安全清单如下:</h5>
+          <div>
+          <button class="bgc-grey btn-add">删除</button>
+          <button class="bgc-blue btn-del show">添加</button>
+          </div>
+        </li>
+        <li class="row1">
+          <h5><span>1.</span>检查安全滑杆是否完好，连接部件是否锈蚀严重，是否有松动，连接是否牢靠</h5>
+        </li>
+        <li class="row2 bor-bot">
+          <h5><span>2.</span>攀登过程中，安全带打在滑杆上，爬到工作位置后，按高挂低作业打好安全带</h5>
+        </li>
+        <li class="row2 bor-top flex-between">
+          <h5>环保清单如下:</h5>
+          <div>
+          <button class="bgc-grey btn-add">删除</button>
+          <button class="bgc-blue btn-del show">添加</button>
+          </div>
+        </li>
+        <li class="row1 bor-bot">
+          <h5 class="size"><span>1.</span>GBZ 2.2-2007 工作场所有害因素职业接触限值  第2部分：物理因素</h5>
+        </li>   
+        <li class="row2 bor-top flex-between">
+          <h5>风险清单如下:</h5>
+          <div>          
+          <button class="bgc-grey btn-add">删除</button>
+          <button class="bgc-blue btn-del show">添加</button>
+          </div>
+        </li>
+        <li class="row1">
+          <h5><span>1.</span>禁止带电拆、接临时电源线</h5>
+        </li>
+        <li class="row2 bor-bot">
+          <h5><span>2.</span>被检修的设备两端应有明显的断开点，验电后并在设备两端断开处装设接地线</h5>
+        </li>
+
+        <li class="row2 bor-top fle bor-white">
+          <h5>备注:</h5>
+          <input class="input2" type="text" />
+        </li>  
+        <li class="row2 flex-between">
+          <h5>工作负责人开票:</h5><input class="input2" type="text" value="admin" />
+          <h5>时间:</h5><input class="input2" type="text" value="2020-03-26" />
+        </li>
+        <li class="row2 fle bor-white">
+          <h5>签名图片:</h5>
+          <select onchange="image1.src=this.value">
+            <option value="">请选择</option>
+            <option value="images/name.png">接票人</option>
+          </select>
+          <img id="image1" src="" width="76" height="27" alt="" />
+        </li>
+        <li class="row2 flex-between">
+          <h5>工作签发人签发:</h5><input class="input2" type="text" value="admin" />
+          <h5>时间:</h5><input class="input2" type="text" value="2020-03-26" />
+        </li>
+        <li class="row2 fle bor-white">
+          <h5>签名图片:</h5>
+          <select onchange="image2.src=this.value">
+            <option value="">请选择</option>
+            <option value="images/name.png">接票人</option>
+          </select>
+          <img id="image2" src="" width="76" height="27" alt="" />
+        </li>
+       <li class="row2 flex-between">
+          <h5>值长接收:</h5><input class="input2" type="text" value="admin" />
+          <h5>时间:</h5><input class="input2" type="text" value="2020-03-26" />
+        </li>
+        <li class="row2 fle bor-white">
+          <h5>签名图片:</h5>
+          <select onchange="image3.src=this.value">
+            <option value="">请选择</option>
+            <option value="images/name.png">接票人</option>
+          </select>
+          <img id="image3" src="" width="76" height="27" alt="" />
+        </li>
+        <li class="row2 flex-between">
+          <h5>布置安全措施:</h5><input class="input2" type="text" value="admin" />
+          <h5>时间:</h5><input class="input2" type="text" value="2020-03-26" />
+        </li>
+        <li class="row2 fle bor-white">
+          <h5>签名图片:</h5>
+          <select onchange="image4.src=this.value">
+            <option value="">请选择</option>
+            <option value="images/name.png">接票人</option>
+          </select>
+          <img id="image4" src="" width="76" height="27" alt="" />
+        </li>
+        <li class="row2 flex-between">
+          <h5>值长审批:</h5><input class="input2" type="text" value="admin" />
+          <h5>时间:</h5><input class="input2" type="text" value="2020-03-26" />
+        </li>
+        <li class="row2 fle bor-white">
+          <h5>签名图片:</h5>
+          <select onchange="image5.src=this.value">
+            <option value="">请选择</option>
+            <option value="images/name.png">接票人</option>
+          </select>
+          <img id="image5" src="" width="76" height="27" alt="" />
+        </li>
+        <li class="row2 flex-between">
+          <h5>工作许可人许可:</h5><input class="input2" type="text" value="admin" />
+          <h5>时间:</h5><input class="input2" type="text" value="2020-03-26" />
+        </li>
+        <li class="row2 fle bor-white">
+          <h5>签名图片:</h5>
+          <select onchange="image6.src=this.value">
+            <option value="">请选择</option>
+            <option value="images/name.png">接票人</option>
+          </select>
+          <img id="image6" src="" width="76" height="27" alt="" />
+        </li>
+        <li class="row2 flex-between">
+          <h5>执行工作票:</h5><input class="input2" type="text" value="admin" />
+          <h5>时间:</h5><input class="input2" type="text" value="2020-03-26" />
+        </li>
+        <li class="row2 fle bor-white">
+          <h5>签名图片:</h5>
+          <select onchange="image7.src=this.value">
+            <option value="">请选择</option>
+            <option value="images/name.png">接票人</option>
+          </select>
+          <img id="image7" src="" width="76" height="27" alt="" />
+        </li>
+        <li class="row2 flex-between">
+          <h5>结束工作票:</h5><input class="input2" type="text" value="admin" />
+          <h5>时间:</h5><input class="input2" type="text" value="2020-03-26" />
+        </li>
+        <li class="row2 fle bor-white">
+          <h5>签名图片:</h5>
+          <select onchange="image8.src=this.value">
+            <option value="">请选择</option>
+            <option value="images/name.png">接票人</option>
+          </select>
+          <img id="image8" src="" width="76" height="27" alt="" />
+        </li>
+      </ul>
+  </div>
+  <div class="save">
+    <button class="bgc-blue" type="button">返 回</button>  
+    <button class="bgc-orange" type="button">保 存</button> 
+  </div>
+</div>
+
+<div class="btmbar hide">
+  <ul class="flex-row">
+<li> <a href="index.html" title=""> <img src="images/bar-ico1.png" width="42" height="42" alt=""/> <span>首页</span> </a> </li>
+    <li class="on"> <a href="index-lp.html" title=""> <img src="images/bar-ico2-on.png" width="42" height="42" alt=""/> <span>任务</span> </a> </li>
+    <li> <a href="message.html" title=""> <img src="images/bar-ico3.png" width="42" height="42" alt=""/> <span>消息</span> </a> </li>
+    <li> <a href="my.html" title=""> <img src="images/bar-ico4.png" width="42" height="42" alt=""/> <span>我的</span> </a> </li>
+  </ul>
+</div>
+<div class="alertBox">
+<div class="black_overlay close"></div>
+<div class="tc">
+  <ul>
+    <li class="row1"><span>标准风险分析描述</span></li>
+    <li class="row2 fle"><input type="checkbox"><span>先接好接地侧</span></li>
+    <li class="row1"><input type="checkbox"><span>抛线时，抛线抛出后应脱离人体</span></li>
+    <li class="row2"><input type="checkbox"><span>接地时，身体不能接触接地线</span></li>
+    <li class="row1"><input type="checkbox"><span>接好地后，才能取下抛线</span></li>
+    <li class="row2"><input type="checkbox"><span>每次绝缘工具使用前，用摇表对绝缘部件进行测量，绝缘符合要求方能使用</span></li>
+    <li class="row1"><input type="checkbox"><span>检查安全滑杆是否完好，连接部件是否锈蚀严重，是否有松动，连接是否牢靠</span></li>
+    <li class="row2"><input type="checkbox"><span>攀登过程中，安全带打在滑杆上，爬到工作位置后，按高挂低作业打好安全带</span></li>
+  </ul>
+  <div class="save2">
+    <button class="bgc-grey close" type="button">取 消</button>  
+    <button class="bgc-blue close" type="button">保 存</button> 
+  </div>
+</div>
+</div>
+</body>
+</html>
